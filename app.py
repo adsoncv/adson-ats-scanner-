@@ -14,8 +14,17 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 # --- Page Configuration ---
 st.set_page_config(
     page_title="ADSON — ATS CV Diagnostic Engine",
-    page_icon="📄",
+    page_icon="adson_logo.png" if os.path.exists("adson_logo.png") else "📄",
     layout="wide"
+)
+
+# Custom App Icon for Mobile Home Screen
+st.markdown(
+    """<head>
+        <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/adsoncv/adson-ats-scanner-/main/adson_logo.png">
+        <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/adsoncv/adson-ats-scanner-/main/adson_logo.png">
+    </head>""",
+    unsafe_allow_html=True
 )
 
 # --- Staff Password Protection ---
