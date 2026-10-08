@@ -315,7 +315,7 @@ st.caption("Official Applicant Tracking System (ATS) Scanner & Diagnostic Platfo
 
 col1, col2 = st.columns([1, 1])
 with col1:
-    candidate_name = st.text_input("Candidate Full Name", placeholder="e.g. Muhammed Kasim A H")
+    candidate_name = st.text_input("Candidate Full Name", placeholder="e.g. Aminul Fayas M")
 with col2:
     target_role = st.text_input("Target Job Title & Industry", placeholder="e.g. Operations Manager (UAE)")
 
