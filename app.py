@@ -19,7 +19,8 @@ st.set_page_config(
 )
 
 # --- Staff Password Protection ---
-st.sidebar.image("adson_logo.png", width=120) if os.path.exists("adson_logo.png") else None
+if os.path.exists("adson_logo.png"):
+    st.sidebar.image("adson_logo.png", width=120)
 st.sidebar.title("ADSON Staff Portal")
 st.sidebar.write("Official ATS Diagnostic & Review System")
 password = st.sidebar.text_input("Enter Staff Password", type="password")
